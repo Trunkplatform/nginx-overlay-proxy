@@ -1,7 +1,6 @@
 FROM quay.io/trunk/alpine-nginx
 
-#COPY index.html /data/www/
-#COPY ping.html /data/www/ping/
+COPY index.html /data/www/
 
 EXPOSE 80 443
-ENTRYPOINT ["nginx"]
+CMD ["nginx"]
